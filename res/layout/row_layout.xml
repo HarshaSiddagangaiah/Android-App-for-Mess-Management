@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="200dp">
+
+    <TextView
+        android:textColor="#005eff"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_day"
+        android:text="Wednesday"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tx_date"
+        android:layout_alignEnd="@+id/tx_date" />
+
+    <TextView
+        android:textColor="#008080"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_recipe1"
+        android:text="Harsha"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tx_date"
+        android:layout_toEndOf="@+id/tx_date"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+    <TextView
+        android:textColor="#008080"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_recipe2"
+        android:text="Harsha"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tx_recipe3"
+        android:layout_toStartOf="@+id/tx_recipe3"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp" />
+    <TextView
+        android:textColor="#008080"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_recipe3"
+        android:text="Harsha"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textColor="#005eff"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="12/12/2017"
+        android:id="@+id/tx_date"
+        android:gravity="center"
+        android:layout_marginBottom="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

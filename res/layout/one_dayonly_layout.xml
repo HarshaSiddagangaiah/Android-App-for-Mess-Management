@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Monday"
+        android:id="@+id/tx_day_one"
+        android:textStyle="bold"
+        android:textColor="#005eff"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recipe 1"
+        android:id="@+id/tx_recipe1_one"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/tx_date_one"
+        android:layout_alignLeft="@+id/tx_date_one"
+        android:layout_alignStart="@+id/tx_date_one" />
+
+    <TextView
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recipe 2"
+        android:id="@+id/tx_recipe2_one"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/tx_recipe1_one"
+        android:layout_toRightOf="@+id/tx1"
+        android:layout_toEndOf="@+id/tx1" />
+
+    <TextView
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recipe 3"
+        android:id="@+id/tx_recipe3_one"
+        android:layout_below="@+id/tx_recipe2_one"
+        android:layout_alignLeft="@+id/tx_recipe2_one"
+        android:layout_alignStart="@+id/tx_recipe2_one"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1. "
+        android:id="@+id/tx1"
+        android:layout_alignTop="@+id/tx_recipe1_one"
+        android:layout_toLeftOf="@+id/tx_recipe1_one"
+        android:layout_toStartOf="@+id/tx_recipe1_one" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2. "
+        android:id="@+id/tx2"
+        android:layout_alignBottom="@+id/tx_recipe2_one"
+        android:layout_toLeftOf="@+id/tx_recipe2_one"
+        android:layout_toStartOf="@+id/tx_recipe2_one" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="3. "
+        android:id="@+id/tx3"
+        android:layout_alignTop="@+id/tx_recipe3_one"
+        android:layout_toLeftOf="@+id/tx_recipe3_one"
+        android:layout_toStartOf="@+id/tx_recipe3_one" />
+
+    <TextView
+
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textColor="#005eff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="12/12/2017"
+        android:id="@+id/tx_date_one"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/tx_day_one"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

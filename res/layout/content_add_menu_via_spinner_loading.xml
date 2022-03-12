@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="AddMenuViaSpinnerLoading"
+    tools:showIn="@layout/add_menu_via_spinner_loading_layout">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/logo3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:textColor="#005eff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/add_new_recipes"
+        android:id="@+id/txtNewRecipes"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editDayfromAdd"
+        android:layout_toEndOf="@+id/editDayfromAdd" />
+    <EditText
+    android:textColorHint="#008080"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content"
+    android:hint="Pick Day"
+    android:id="@+id/editDayfromAdd"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_toLeftOf="@+id/btnaddrecipe"
+        android:layout_toStartOf="@+id/btnaddrecipe" />
+    <EditText
+        android:textColorHint="#008080"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:hint="and Date"
+        android:id="@+id/editDatefromAdd"
+        android:layout_alignTop="@+id/editDayfromAdd"
+        android:layout_toRightOf="@+id/editDayfromAdd"
+        android:layout_toEndOf="@+id/editDayfromAdd" />
+    <Button
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/PickThingsFromAddbtn"
+        android:text=": :"
+        android:layout_alignBottom="@+id/editDatefromAdd"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe 1 :"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/sp"
+        android:layout_alignLeft="@+id/textView100"
+        android:layout_alignStart="@+id/textView100" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/editDatefromAdd"
+        android:layout_toRightOf="@+id/btnaddrecipe"
+        android:layout_toEndOf="@+id/btnaddrecipe" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe 2 :"
+        android:id="@+id/textView100"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/btnaddrecipe"
+        android:layout_toStartOf="@+id/btnaddrecipe"
+        android:layout_marginTop="51dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp2"
+        android:layout_alignTop="@+id/textView100"
+        android:layout_alignLeft="@+id/sp"
+        android:layout_alignStart="@+id/sp" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#008080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe 3 :"
+        android:id="@+id/textView101"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textView100"
+        android:layout_alignLeft="@+id/textView100"
+        android:layout_alignStart="@+id/textView100" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp3"
+        android:layout_alignTop="@+id/textView101"
+        android:layout_alignLeft="@+id/sp2"
+        android:layout_alignStart="@+id/sp2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btnaddrecipe"
+        android:onClick="saveNewRecipeinDatabase"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button1"
+        android:layout_alignTop="@+id/btndeletefromAddScreen"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:onClick="DeleteFromAddScreen"
+        android:id="@+id/btndeletefromAddScreen"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button1"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView101"
+        android:layout_alignLeft="@+id/editDayfromAdd"
+        android:layout_alignStart="@+id/editDayfromAdd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/button"
+        android:onClick="UpdateFromAddScreen"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button1"
+        android:layout_alignTop="@+id/btnaddrecipe"
+        android:layout_toRightOf="@+id/editDatefromAdd"
+        android:layout_toEndOf="@+id/editDatefromAdd" />
+
+    <TextView
+        android:textColor="#005eff"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Click Message Icon)"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/txtNewRecipes"
+        android:layout_alignRight="@+id/txtNewRecipes"
+        android:layout_alignEnd="@+id/txtNewRecipes" />
+
+
+</RelativeLayout>

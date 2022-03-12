@@ -1,0 +1,3 @@
+# Android-App-for-Mess-Management
+
+An android app is developed for providing an interface to access the mess menu and its coordination. Modules are developed for user registration and access. The profiles of all the users registered are maintained in the database. Access is given to the user to change their information in their profile. A menu is set based on the days, this can be considered as a preset menu. Based on the requirements on the day the menu can be changed. 

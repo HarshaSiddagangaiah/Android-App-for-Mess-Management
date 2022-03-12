@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Signup Admin"
+        android:id="@+id/txtNewRecipes"
+        android:textStyle="bold"
+        android:textColor="#005eff"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignRight="@+id/employeeno2"
+        android:layout_alignEnd="@+id/employeeno2" />
+
+    <EditText
+        android:textColorHint="#008080"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/employeeno2"
+        android:hint="Employee No."
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/psw2"
+        android:layout_alignStart="@+id/psw2" />
+
+    <EditText
+        android:textColorHint="#008080"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/psw2"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/employeeno2"
+        android:layout_alignLeft="@+id/confirmpsw2"
+        android:layout_alignStart="@+id/confirmpsw2" />
+
+    <EditText
+        android:textColorHint="#008080"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmpsw2"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/psw2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="Register"
+        android:id="@+id/registerbutton2"
+        android:layout_marginTop="48dp"
+        android:onClick="userReg"
+        android:layout_below="@+id/confirmpsw2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/logo3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

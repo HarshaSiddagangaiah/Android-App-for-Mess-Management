@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Packages Mess</string>
+    <string name="employee_no">Employee No.</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="registration_form">Registration Form</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_form">Login Form</string>
+    <string name="menu">Menu</string>
+    <string name="dislpay_the_menu">Dislpay the Menu</string>
+    <string name="add_new_recipes">Add New Recipes</string>
+    <string name="recipe_1">Recipe 1</string>
+    <string name="recipe_2">Recipe 2</string>
+    <string name="recipe_3">Recipe 3</string>
+    <string name="save">Save</string>
+    <string name="delete_recipes">Delete Recipes</string>
+    <string name="delete_it">Delete it</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="update_recipes">Update Recipes</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="frdiay">Frdiay</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="title_activity_add_menu_via_spinner_loading">AddMenuViaSpinnerLoading</string>
+</resources>
